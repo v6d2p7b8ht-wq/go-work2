@@ -1,0 +1,452 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Fixture actually constructs campfire
+PASS | Fixture actually constructs wall
+PASS | Fixture actually constructs shelter
+PASS | Fixture actually exchanges ore for an electronic component
+PASS | Complete live schema 3 validates in memory and after JSON number decoding
+PASS | Missing persistent field rejected: ["version"]
+PASS | Wrong field type rejected: ["version"]
+PASS | Nonfinite field rejected: ["version"] = nan
+PASS | Nonfinite field rejected: ["version"] = inf
+PASS | Nonfinite field rejected: ["version"] = -inf
+PASS | Missing persistent field rejected: ["state_id"]
+PASS | Wrong field type rejected: ["state_id"]
+PASS | Missing persistent field rejected: ["position"]
+PASS | Wrong field type rejected: ["position"]
+PASS | Missing persistent field rejected: ["inventory"]
+PASS | Wrong field type rejected: ["inventory"]
+PASS | Missing persistent field rejected: ["inventory", "wood"]
+PASS | Wrong field type rejected: ["inventory", "wood"]
+PASS | Nonfinite field rejected: ["inventory", "wood"] = nan
+PASS | Nonfinite field rejected: ["inventory", "wood"] = inf
+PASS | Nonfinite field rejected: ["inventory", "wood"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "stone"]
+PASS | Wrong field type rejected: ["inventory", "stone"]
+PASS | Nonfinite field rejected: ["inventory", "stone"] = nan
+PASS | Nonfinite field rejected: ["inventory", "stone"] = inf
+PASS | Nonfinite field rejected: ["inventory", "stone"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "food"]
+PASS | Wrong field type rejected: ["inventory", "food"]
+PASS | Nonfinite field rejected: ["inventory", "food"] = nan
+PASS | Nonfinite field rejected: ["inventory", "food"] = inf
+PASS | Nonfinite field rejected: ["inventory", "food"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "water"]
+PASS | Wrong field type rejected: ["inventory", "water"]
+PASS | Nonfinite field rejected: ["inventory", "water"] = nan
+PASS | Nonfinite field rejected: ["inventory", "water"] = inf
+PASS | Nonfinite field rejected: ["inventory", "water"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "ore"]
+PASS | Wrong field type rejected: ["inventory", "ore"]
+PASS | Nonfinite field rejected: ["inventory", "ore"] = nan
+PASS | Nonfinite field rejected: ["inventory", "ore"] = inf
+PASS | Nonfinite field rejected: ["inventory", "ore"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "electronics"]
+PASS | Wrong field type rejected: ["inventory", "electronics"]
+PASS | Nonfinite field rejected: ["inventory", "electronics"] = nan
+PASS | Nonfinite field rejected: ["inventory", "electronics"] = inf
+PASS | Nonfinite field rejected: ["inventory", "electronics"] = -inf
+PASS | Missing persistent field rejected: ["inventory", "blueprint"]
+PASS | Wrong field type rejected: ["inventory", "blueprint"]
+PASS | Nonfinite field rejected: ["inventory", "blueprint"] = nan
+PASS | Nonfinite field rejected: ["inventory", "blueprint"] = inf
+PASS | Nonfinite field rejected: ["inventory", "blueprint"] = -inf
+PASS | Missing persistent field rejected: ["settings"]
+PASS | Wrong field type rejected: ["settings"]
+PASS | Missing persistent field rejected: ["settings", "quality"]
+PASS | Wrong field type rejected: ["settings", "quality"]
+PASS | Nonfinite field rejected: ["settings", "quality"] = nan
+PASS | Nonfinite field rejected: ["settings", "quality"] = inf
+PASS | Nonfinite field rejected: ["settings", "quality"] = -inf
+PASS | Missing persistent field rejected: ["settings", "target_fps"]
+PASS | Wrong field type rejected: ["settings", "target_fps"]
+PASS | Nonfinite field rejected: ["settings", "target_fps"] = nan
+PASS | Nonfinite field rejected: ["settings", "target_fps"] = inf
+PASS | Nonfinite field rejected: ["settings", "target_fps"] = -inf
+PASS | Missing persistent field rejected: ["settings", "sensitivity"]
+PASS | Wrong field type rejected: ["settings", "sensitivity"]
+PASS | Nonfinite field rejected: ["settings", "sensitivity"] = nan
+PASS | Nonfinite field rejected: ["settings", "sensitivity"] = inf
+PASS | Nonfinite field rejected: ["settings", "sensitivity"] = -inf
+PASS | Missing persistent field rejected: ["picked"]
+PASS | Wrong field type rejected: ["picked"]
+PASS | Missing persistent field rejected: ["stamina"]
+PASS | Wrong field type rejected: ["stamina"]
+PASS | Nonfinite field rejected: ["stamina"] = nan
+PASS | Nonfinite field rejected: ["stamina"] = inf
+PASS | Nonfinite field rejected: ["stamina"] = -inf
+PASS | Missing persistent field rejected: ["camera_yaw"]
+PASS | Wrong field type rejected: ["camera_yaw"]
+PASS | Nonfinite field rejected: ["camera_yaw"] = nan
+PASS | Nonfinite field rejected: ["camera_yaw"] = inf
+PASS | Nonfinite field rejected: ["camera_yaw"] = -inf
+PASS | Missing persistent field rejected: ["camera_pitch"]
+PASS | Wrong field type rejected: ["camera_pitch"]
+PASS | Nonfinite field rejected: ["camera_pitch"] = nan
+PASS | Nonfinite field rejected: ["camera_pitch"] = inf
+PASS | Nonfinite field rejected: ["camera_pitch"] = -inf
+PASS | Missing persistent field rejected: ["camera_distance"]
+PASS | Wrong field type rejected: ["camera_distance"]
+PASS | Nonfinite field rejected: ["camera_distance"] = nan
+PASS | Nonfinite field rejected: ["camera_distance"] = inf
+PASS | Nonfinite field rejected: ["camera_distance"] = -inf
+PASS | Missing persistent field rejected: ["talked_to_npc"]
+PASS | Wrong field type rejected: ["talked_to_npc"]
+PASS | Missing persistent field rejected: ["phase2"]
+PASS | Wrong field type rejected: ["phase2"]
+PASS | Missing persistent field rejected: ["phase2", "content_revision"]
+PASS | Wrong field type rejected: ["phase2", "content_revision"]
+PASS | Nonfinite field rejected: ["phase2", "content_revision"] = nan
+PASS | Nonfinite field rejected: ["phase2", "content_revision"] = inf
+PASS | Nonfinite field rejected: ["phase2", "content_revision"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "buildings"]
+PASS | Wrong field type rejected: ["phase2", "buildings"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "next_id"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "next_id"]
+PASS | Nonfinite field rejected: ["phase2", "buildings", "next_id"] = nan
+PASS | Nonfinite field rejected: ["phase2", "buildings", "next_id"] = inf
+PASS | Nonfinite field rejected: ["phase2", "buildings", "next_id"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 0, "id"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 0, "id"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 0, "type"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 0, "type"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 0, "position"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 0, "position"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 0, "yaw"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 0, "yaw"]
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 0, "yaw"] = nan
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 0, "yaw"] = inf
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 0, "yaw"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 0, "lit"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 0, "lit"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 1, "id"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 1, "id"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 1, "type"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 1, "type"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 1, "position"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 1, "position"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 1, "yaw"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 1, "yaw"]
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 1, "yaw"] = nan
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 1, "yaw"] = inf
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 1, "yaw"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 1, "lit"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 1, "lit"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 2, "id"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 2, "id"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 2, "type"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 2, "type"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 2, "position"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 2, "position"]
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 2, "yaw"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 2, "yaw"]
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 2, "yaw"] = nan
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 2, "yaw"] = inf
+PASS | Nonfinite field rejected: ["phase2", "buildings", "records", 2, "yaw"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "buildings", "records", 2, "lit"]
+PASS | Wrong field type rejected: ["phase2", "buildings", "records", 2, "lit"]
+PASS | Missing persistent field rejected: ["phase2", "trader"]
+PASS | Wrong field type rejected: ["phase2", "trader"]
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock"]
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "food"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "food"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "food"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "food"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "food"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "water"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "water"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "water"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "water"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "water"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "wood"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "wood"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "wood"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "wood"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "wood"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "stone"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "stone"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "stone"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "stone"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "stone"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "ore"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "ore"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "ore"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "ore"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "ore"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "electronics"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "electronics"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "electronics"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "electronics"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "electronics"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "stock", "blueprint"]
+PASS | Wrong field type rejected: ["phase2", "trader", "stock", "blueprint"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "blueprint"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "blueprint"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "stock", "blueprint"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "restock_left"]
+PASS | Wrong field type rejected: ["phase2", "trader", "restock_left"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "restock_left"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "restock_left"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "restock_left"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "trader", "trades"]
+PASS | Wrong field type rejected: ["phase2", "trader", "trades"]
+PASS | Nonfinite field rejected: ["phase2", "trader", "trades"] = nan
+PASS | Nonfinite field rejected: ["phase2", "trader", "trades"] = inf
+PASS | Nonfinite field rejected: ["phase2", "trader", "trades"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "environment"]
+PASS | Wrong field type rejected: ["phase2", "environment"]
+PASS | Missing persistent field rejected: ["phase2", "environment", "hour"]
+PASS | Wrong field type rejected: ["phase2", "environment", "hour"]
+PASS | Nonfinite field rejected: ["phase2", "environment", "hour"] = nan
+PASS | Nonfinite field rejected: ["phase2", "environment", "hour"] = inf
+PASS | Nonfinite field rejected: ["phase2", "environment", "hour"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "environment", "day"]
+PASS | Wrong field type rejected: ["phase2", "environment", "day"]
+PASS | Nonfinite field rejected: ["phase2", "environment", "day"] = nan
+PASS | Nonfinite field rejected: ["phase2", "environment", "day"] = inf
+PASS | Nonfinite field rejected: ["phase2", "environment", "day"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "environment", "day_seconds"]
+PASS | Wrong field type rejected: ["phase2", "environment", "day_seconds"]
+PASS | Nonfinite field rejected: ["phase2", "environment", "day_seconds"] = nan
+PASS | Nonfinite field rejected: ["phase2", "environment", "day_seconds"] = inf
+PASS | Nonfinite field rejected: ["phase2", "environment", "day_seconds"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "environment", "weather_index"]
+PASS | Wrong field type rejected: ["phase2", "environment", "weather_index"]
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_index"] = nan
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_index"] = inf
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_index"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "environment", "weather_left"]
+PASS | Wrong field type rejected: ["phase2", "environment", "weather_left"]
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_left"] = nan
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_left"] = inf
+PASS | Nonfinite field rejected: ["phase2", "environment", "weather_left"] = -inf
+PASS | Missing persistent field rejected: ["phase2", "family"]
+PASS | Wrong field type rejected: ["phase2", "family"]
+PASS | Missing persistent field rejected: ["phase2", "family", "id"]
+PASS | Wrong field type rejected: ["phase2", "family", "id"]
+PASS | Missing persistent field rejected: ["phase2", "family", "stage"]
+PASS | Wrong field type rejected: ["phase2", "family", "stage"]
+PASS | Missing persistent field rejected: ["phase2", "family", "position"]
+PASS | Wrong field type rejected: ["phase2", "family", "position"]
+PASS | Missing persistent field rejected: ["phase2", "family", "reward_claimed"]
+PASS | Wrong field type rejected: ["phase2", "family", "reward_claimed"]
+PASS | Missing persistent field rejected: ["phase2", "family", "arrival_time"]
+PASS | Wrong field type rejected: ["phase2", "family", "arrival_time"]
+PASS | Nonfinite field rejected: ["phase2", "family", "arrival_time"] = nan
+PASS | Nonfinite field rejected: ["phase2", "family", "arrival_time"] = inf
+PASS | Nonfinite field rejected: ["phase2", "family", "arrival_time"] = -inf
+PASS | Missing persistent field rejected: ["survival"]
+PASS | Wrong field type rejected: ["survival"]
+PASS | Missing persistent field rejected: ["survival", "health"]
+PASS | Wrong field type rejected: ["survival", "health"]
+PASS | Nonfinite field rejected: ["survival", "health"] = nan
+PASS | Nonfinite field rejected: ["survival", "health"] = inf
+PASS | Nonfinite field rejected: ["survival", "health"] = -inf
+PASS | Missing persistent field rejected: ["survival", "hunger"]
+PASS | Wrong field type rejected: ["survival", "hunger"]
+PASS | Nonfinite field rejected: ["survival", "hunger"] = nan
+PASS | Nonfinite field rejected: ["survival", "hunger"] = inf
+PASS | Nonfinite field rejected: ["survival", "hunger"] = -inf
+PASS | Missing persistent field rejected: ["survival", "thirst"]
+PASS | Wrong field type rejected: ["survival", "thirst"]
+PASS | Nonfinite field rejected: ["survival", "thirst"] = nan
+PASS | Nonfinite field rejected: ["survival", "thirst"] = inf
+PASS | Nonfinite field rejected: ["survival", "thirst"] = -inf
+PASS | Missing persistent field rejected: ["survival", "stamina"]
+PASS | Wrong field type rejected: ["survival", "stamina"]
+PASS | Nonfinite field rejected: ["survival", "stamina"] = nan
+PASS | Nonfinite field rejected: ["survival", "stamina"] = inf
+PASS | Nonfinite field rejected: ["survival", "stamina"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings"]
+PASS | Wrong field type rejected: ["survival", "settings"]
+PASS | Missing persistent field rejected: ["survival", "settings", "hunger_per_minute"]
+PASS | Wrong field type rejected: ["survival", "settings", "hunger_per_minute"]
+PASS | Nonfinite field rejected: ["survival", "settings", "hunger_per_minute"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "hunger_per_minute"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "hunger_per_minute"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "thirst_per_minute"]
+PASS | Wrong field type rejected: ["survival", "settings", "thirst_per_minute"]
+PASS | Nonfinite field rejected: ["survival", "settings", "thirst_per_minute"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "thirst_per_minute"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "thirst_per_minute"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "sprint_drain"]
+PASS | Wrong field type rejected: ["survival", "settings", "sprint_drain"]
+PASS | Nonfinite field rejected: ["survival", "settings", "sprint_drain"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "sprint_drain"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "sprint_drain"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "stamina_regen"]
+PASS | Wrong field type rejected: ["survival", "settings", "stamina_regen"]
+PASS | Nonfinite field rejected: ["survival", "settings", "stamina_regen"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "stamina_regen"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "stamina_regen"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "starvation_damage"]
+PASS | Wrong field type rejected: ["survival", "settings", "starvation_damage"]
+PASS | Nonfinite field rejected: ["survival", "settings", "starvation_damage"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "starvation_damage"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "starvation_damage"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "dehydration_damage"]
+PASS | Wrong field type rejected: ["survival", "settings", "dehydration_damage"]
+PASS | Nonfinite field rejected: ["survival", "settings", "dehydration_damage"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "dehydration_damage"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "dehydration_damage"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "safe_heal"]
+PASS | Wrong field type rejected: ["survival", "settings", "safe_heal"]
+PASS | Nonfinite field rejected: ["survival", "settings", "safe_heal"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "safe_heal"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "safe_heal"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "zombie_damage"]
+PASS | Wrong field type rejected: ["survival", "settings", "zombie_damage"]
+PASS | Nonfinite field rejected: ["survival", "settings", "zombie_damage"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "zombie_damage"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "zombie_damage"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "attack_interval"]
+PASS | Wrong field type rejected: ["survival", "settings", "attack_interval"]
+PASS | Nonfinite field rejected: ["survival", "settings", "attack_interval"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "attack_interval"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "attack_interval"] = -inf
+PASS | Missing persistent field rejected: ["survival", "settings", "gather_cost"]
+PASS | Wrong field type rejected: ["survival", "settings", "gather_cost"]
+PASS | Nonfinite field rejected: ["survival", "settings", "gather_cost"] = nan
+PASS | Nonfinite field rejected: ["survival", "settings", "gather_cost"] = inf
+PASS | Nonfinite field rejected: ["survival", "settings", "gather_cost"] = -inf
+PASS | Missing persistent field rejected: ["resources"]
+PASS | Wrong field type rejected: ["resources"]
+PASS | Missing persistent field rejected: ["resources", "remaining"]
+PASS | Wrong field type rejected: ["resources", "remaining"]
+PASS | Missing persistent field rejected: ["resources", "cooldown"]
+PASS | Wrong field type rejected: ["resources", "cooldown"]
+PASS | Nonfinite field rejected: ["resources", "cooldown"] = nan
+PASS | Nonfinite field rejected: ["resources", "cooldown"] = inf
+PASS | Nonfinite field rejected: ["resources", "cooldown"] = -inf
+PASS | Missing persistent field rejected: ["infected"]
+PASS | Wrong field type rejected: ["infected"]
+PASS | Missing persistent field rejected: ["infected", 0, "id"]
+PASS | Wrong field type rejected: ["infected", 0, "id"]
+PASS | Missing persistent field rejected: ["infected", 0, "position"]
+PASS | Wrong field type rejected: ["infected", 0, "position"]
+PASS | Missing persistent field rejected: ["infected", 0, "state"]
+PASS | Wrong field type rejected: ["infected", 0, "state"]
+PASS | Nonfinite field rejected: ["infected", 0, "state"] = nan
+PASS | Nonfinite field rejected: ["infected", 0, "state"] = inf
+PASS | Nonfinite field rejected: ["infected", 0, "state"] = -inf
+PASS | Missing persistent field rejected: ["infected", 0, "last_seen"]
+PASS | Wrong field type rejected: ["infected", 0, "last_seen"]
+PASS | Missing persistent field rejected: ["infected", 0, "investigate_time"]
+PASS | Wrong field type rejected: ["infected", 0, "investigate_time"]
+PASS | Nonfinite field rejected: ["infected", 0, "investigate_time"] = nan
+PASS | Nonfinite field rejected: ["infected", 0, "investigate_time"] = inf
+PASS | Nonfinite field rejected: ["infected", 0, "investigate_time"] = -inf
+PASS | Missing persistent field rejected: ["infected", 0, "patrol_index"]
+PASS | Wrong field type rejected: ["infected", 0, "patrol_index"]
+PASS | Nonfinite field rejected: ["infected", 0, "patrol_index"] = nan
+PASS | Nonfinite field rejected: ["infected", 0, "patrol_index"] = inf
+PASS | Nonfinite field rejected: ["infected", 0, "patrol_index"] = -inf
+PASS | Missing persistent field rejected: ["infected", 0, "attack_cooldown"]
+PASS | Wrong field type rejected: ["infected", 0, "attack_cooldown"]
+PASS | Nonfinite field rejected: ["infected", 0, "attack_cooldown"] = nan
+PASS | Nonfinite field rejected: ["infected", 0, "attack_cooldown"] = inf
+PASS | Nonfinite field rejected: ["infected", 0, "attack_cooldown"] = -inf
+PASS | Missing persistent field rejected: ["infected", 1, "id"]
+PASS | Wrong field type rejected: ["infected", 1, "id"]
+PASS | Missing persistent field rejected: ["infected", 1, "position"]
+PASS | Wrong field type rejected: ["infected", 1, "position"]
+PASS | Missing persistent field rejected: ["infected", 1, "state"]
+PASS | Wrong field type rejected: ["infected", 1, "state"]
+PASS | Nonfinite field rejected: ["infected", 1, "state"] = nan
+PASS | Nonfinite field rejected: ["infected", 1, "state"] = inf
+PASS | Nonfinite field rejected: ["infected", 1, "state"] = -inf
+PASS | Missing persistent field rejected: ["infected", 1, "last_seen"]
+PASS | Wrong field type rejected: ["infected", 1, "last_seen"]
+PASS | Missing persistent field rejected: ["infected", 1, "investigate_time"]
+PASS | Wrong field type rejected: ["infected", 1, "investigate_time"]
+PASS | Nonfinite field rejected: ["infected", 1, "investigate_time"] = nan
+PASS | Nonfinite field rejected: ["infected", 1, "investigate_time"] = inf
+PASS | Nonfinite field rejected: ["infected", 1, "investigate_time"] = -inf
+PASS | Missing persistent field rejected: ["infected", 1, "patrol_index"]
+PASS | Wrong field type rejected: ["infected", 1, "patrol_index"]
+PASS | Nonfinite field rejected: ["infected", 1, "patrol_index"] = nan
+PASS | Nonfinite field rejected: ["infected", 1, "patrol_index"] = inf
+PASS | Nonfinite field rejected: ["infected", 1, "patrol_index"] = -inf
+PASS | Missing persistent field rejected: ["infected", 1, "attack_cooldown"]
+PASS | Wrong field type rejected: ["infected", 1, "attack_cooldown"]
+PASS | Nonfinite field rejected: ["infected", 1, "attack_cooldown"] = nan
+PASS | Nonfinite field rejected: ["infected", 1, "attack_cooldown"] = inf
+PASS | Nonfinite field rejected: ["infected", 1, "attack_cooldown"] = -inf
+PASS | Missing persistent field rejected: ["infected", 2, "id"]
+PASS | Wrong field type rejected: ["infected", 2, "id"]
+PASS | Missing persistent field rejected: ["infected", 2, "position"]
+PASS | Wrong field type rejected: ["infected", 2, "position"]
+PASS | Missing persistent field rejected: ["infected", 2, "state"]
+PASS | Wrong field type rejected: ["infected", 2, "state"]
+PASS | Nonfinite field rejected: ["infected", 2, "state"] = nan
+PASS | Nonfinite field rejected: ["infected", 2, "state"] = inf
+PASS | Nonfinite field rejected: ["infected", 2, "state"] = -inf
+PASS | Missing persistent field rejected: ["infected", 2, "last_seen"]
+PASS | Wrong field type rejected: ["infected", 2, "last_seen"]
+PASS | Missing persistent field rejected: ["infected", 2, "investigate_time"]
+PASS | Wrong field type rejected: ["infected", 2, "investigate_time"]
+PASS | Nonfinite field rejected: ["infected", 2, "investigate_time"] = nan
+PASS | Nonfinite field rejected: ["infected", 2, "investigate_time"] = inf
+PASS | Nonfinite field rejected: ["infected", 2, "investigate_time"] = -inf
+PASS | Missing persistent field rejected: ["infected", 2, "patrol_index"]
+PASS | Wrong field type rejected: ["infected", 2, "patrol_index"]
+PASS | Nonfinite field rejected: ["infected", 2, "patrol_index"] = nan
+PASS | Nonfinite field rejected: ["infected", 2, "patrol_index"] = inf
+PASS | Nonfinite field rejected: ["infected", 2, "patrol_index"] = -inf
+PASS | Missing persistent field rejected: ["infected", 2, "attack_cooldown"]
+PASS | Wrong field type rejected: ["infected", 2, "attack_cooldown"]
+PASS | Nonfinite field rejected: ["infected", 2, "attack_cooldown"] = nan
+PASS | Nonfinite field rejected: ["infected", 2, "attack_cooldown"] = inf
+PASS | Nonfinite field rejected: ["infected", 2, "attack_cooldown"] = -inf
+PASS | Nonfinite transform component rejected: ["position"]/0
+PASS | Nonfinite transform component rejected: ["position"]/1
+PASS | Nonfinite transform component rejected: ["position"]/2
+PASS | Nonfinite transform component rejected: ["phase2", "family", "position"]/0
+PASS | Nonfinite transform component rejected: ["phase2", "family", "position"]/1
+PASS | Nonfinite transform component rejected: ["phase2", "family", "position"]/2
+PASS | Nonfinite transform component rejected: ["phase2", "buildings", "records", 0, "position"]/0
+PASS | Nonfinite transform component rejected: ["phase2", "buildings", "records", 0, "position"]/1
+PASS | Nonfinite transform component rejected: ["phase2", "buildings", "records", 0, "position"]/2
+PASS | Nonfinite transform component rejected: ["infected", 0, "position"]/0
+PASS | Nonfinite transform component rejected: ["infected", 0, "position"]/1
+PASS | Nonfinite transform component rejected: ["infected", 0, "position"]/2
+PASS | Nonfinite transform component rejected: ["infected", 0, "last_seen"]/0
+PASS | Nonfinite transform component rejected: ["infected", 0, "last_seen"]/1
+PASS | Nonfinite transform component rejected: ["infected", 0, "last_seen"]/2
+PASS | Original content_revision-only counterexample is invalid
+PASS | Direct invalid restore cannot mutate any game progress
+PASS | Complete schema 3 writes through the real file API
+PASS | Complete schema 3 file reads back without synthesizing fields
+PASS | Repeated real reads retain structures, stock, items, resources and claimed quest without duplication
+PASS | Reloaded claimed evacuation cannot grant its reward again
+PASS | Incomplete schema 3 primary restores all progress from a valid backup
+PASS | Recovered session can save a new valid primary
+PASS | Save after schema corruption does not rotate bad primary over the valid backup
+PASS | Rejected schema 3 write preserves primary and good backup bytes
+PASS | Oversized failed write preserves both original files
+PASS | Fixture can block only its own temporary file path
+PASS | Actual temporary-file open failure preserves primary and backup
+PASS | Two unusable files reject load without changing the running session
+PASS | Future schema preserves both files: user://survivor_v1.json
+PASS | Future schema preserves both files: user://survivor_v1.json.bak
+PASS | Full bag leaves the earned evacuation reward pending
+PASS | Real pending-reward load retains task and full inventory
+PASS | Claiming after freeing capacity grants exactly the earned two items
+PASS | Post-claim progress saves and loads twice
+PASS | Repeated post-claim loads cannot duplicate supplies
+PASS | Real legacy fixture validates: v1-real-save.json
+PASS | Explicit migration fills new modules without changing legacy source: v1-real-save.json
+PASS | Real old file loads via disk validation/migration: v1-real-save.json
+PASS | Migration preserves actual old item counts and initializes only absent new systems: v1-real-save.json
+PASS | Next real save upgrades legacy session to complete schema 3: v1-real-save.json
+PASS | Read-only legacy source fixture remains unchanged: v1-real-save.json
+PASS | Real legacy fixture validates: v022-real-save.json
+PASS | Explicit migration fills new modules without changing legacy source: v022-real-save.json
+PASS | Real old file loads via disk validation/migration: v022-real-save.json
+PASS | Migration preserves actual old item counts and initializes only absent new systems: v022-real-save.json
+PASS | Next real save upgrades legacy session to complete schema 3: v022-real-save.json
+PASS | Read-only legacy source fixture remains unchanged: v022-real-save.json
+RESULT | 449 QA-023-01 save-integrity checks | 0 failures

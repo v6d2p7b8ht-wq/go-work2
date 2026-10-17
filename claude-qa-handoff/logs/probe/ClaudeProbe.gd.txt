@@ -1,0 +1,57 @@
+extends Node
+## Claude probe (not shipped): title-screen save overwrite + legacy type crash.
+var world: WorldManager
+func out(label: String, value: Variant) -> void:
+	print("PROBE | ", label, " | ", value)
+func freeze(w: WorldManager) -> void:
+	w.set_process(false)
+	w.player.set_physics_process(false)
+	w.family.set_process(false)
+	w.family.member.set_physics_process(false)
+	w.clock.set_process(false)
+	w.trader.set_process(false)
+	for z in w.zombies: z.set_physics_process(false)
+func fresh() -> WorldManager:
+	if is_instance_valid(world):
+		remove_child(world)
+		world.free()
+	get_tree().paused = false
+	# Autoloads survive between worlds in one process; a real page reload starts them fresh.
+	InventorySystem.restore({})
+	world = load("res://scenes/Main.tscn").instantiate()
+	add_child(world)
+	freeze(world)
+	return world
+func _ready() -> void:
+	call_deferred("run")
+func run() -> void:
+	for p in [SaveManager.SAVE_PATH, SaveManager.SAVE_PATH+".bak", SaveManager.SAVE_PATH+".tmp"]:
+		if FileAccess.file_exists(p): DirAccess.remove_absolute(ProjectSettings.globalize_path(p))
+	# 1. A player with real progress saves twice (primary + backup both progressed).
+	fresh()
+	await get_tree().physics_frame
+	InventorySystem.restore({"wood":17,"stone":5,"food":3})
+	world.picked["s01_loot_00"] = true
+	out("save1", SaveManager.save_world(world))
+	out("save2", SaveManager.save_world(world))
+	out("disk wood before", SaveManager.read_snapshot()["inventory"]["wood"])
+	# 2. Page reload: new session, title screen still open, player switches apps twice.
+	fresh()
+	await get_tree().physics_frame
+	world.hud.show_welcome()
+	out("modal", world.hud.current_modal)
+	out("live wood (fresh session)", InventorySystem.items["wood"])
+	world._notification(Node.NOTIFICATION_APPLICATION_PAUSED)
+	world._notification(Node.NOTIFICATION_APPLICATION_PAUSED)
+	var primary := SaveManager._read_candidate(SaveManager.SAVE_PATH)
+	var backup := SaveManager._read_candidate(SaveManager.SAVE_PATH+".bak")
+	out("disk primary wood after 2x background on title", primary.get("inventory",{}).get("wood"))
+	out("disk backup wood after 2x background on title", backup.get("inventory",{}).get("wood"))
+	world.hud.close_modal()
+	out("continue loads", SaveManager.load_world(world))
+	out("live wood after continue", InventorySystem.items["wood"])
+	# 3. Legacy schema-1 file whose state_id is a number.
+	var legacy := {"version":1,"state_id":5,"position":[4,0.5,31],"inventory":{"wood":1},"settings":{},"picked":[],"stamina":100}
+	out("legacy non-string state_id valid?", SaveManager.valid_snapshot(legacy))
+	out("probe done", true)
+	get_tree().quit(0)

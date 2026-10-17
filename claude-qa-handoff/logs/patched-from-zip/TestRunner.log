@@ -1,0 +1,56 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Android Mobile and Web Compatibility are separately configured
+PASS | 8 distinct buildings were generated
+PASS | 5 abandoned vehicles were generated
+PASS | 3 infected agents, within the requested 2–5 budget
+PASS | All original 18 supplies plus 3 drinking-water locations remain collectible
+PASS | Forest uses chunked MultiMesh trees
+PASS | Static objects are batched
+PASS | Terrain triangle winding produces upward-facing visible surfaces
+PASS | Embedded UI font contains actual Chinese glyphs
+PASS | 10-state extension data
+PASS | 5 infection levels
+PASS | Only implemented state can be entered
+PASS | Reserved extension boundary accepts known events
+PASS | Gravity and real terrain collision settle the player
+PASS | Third-person walking moves at world scale
+PASS | Sprinting is faster and consumes stamina
+PASS | Jump produces airborne movement
+PASS | Jump lands on the terrain
+PASS | Player can physically enter the supermarket through its doorway
+PASS | Supermarket side panels have solid collision
+PASS | Indexed joystick/view/action multi-touch ownership
+PASS | Right-side drag rotates the camera
+PASS | Releasing action and view does not release the joystick
+PASS | Focus-loss reset clears active fingers
+PASS | Camera pitch and distance are bounded
+PASS | Forest hillside matches height-map collision
+PASS | Inventory rejects unknown and negative items
+PASS | Nearby food is picked up once and removed
+PASS | The same pickup cannot be duplicated
+PASS | Inventory modal pauses the simulation and movement
+PASS | Safe-zone NPC dialogue works
+PASS | Very-low preset disables shadows and particles
+PASS | Vegetation density actually changes
+PASS | Extreme preset applies scale, shadow and particle settings
+PASS | Graphics configuration survives a disk reload
+PASS | Real save file is written
+PASS | Written save passes schema validation
+PASS | Real save file loads
+PASS | Inventory and collected IDs round-trip without respawning loot
+PASS | Position, camera and NPC progress round-trip
+PASS | Future save schemas are rejected
+PASS | Non-numeric position is rejected
+PASS | Out-of-map position is rejected
+PASS | A second atomic save retains the previous backup
+PASS | Corrupt primary save recovers from backup
+PASS | Inventory data is bounded and sanitized
+PASS | A* route avoids actual building obstacles
+PASS | Shared navigation grid retains the supermarket entrance
+PASS | Infected detects an unobstructed nearby player
+PASS | Infected stops chasing a player inside the safe zone
+PASS | Far infected sleeps instead of pathfinding
+PASS | Opaque supermarket wall blocks infected sight
+PASS | AI decisions run at 4 Hz, below the physics frequency
+RESULT | 53 checks, 0 failures

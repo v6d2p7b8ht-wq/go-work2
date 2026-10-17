@@ -1,0 +1,31 @@
+SUITE_EXIT | import | 0 | clean=True
+RESULT | 17 survival checks, 0 failures
+SUITE_EXIT | SurvivalStateTests | 0 | clean=True
+RESULT | 20 AI checks, 0 failures
+SUITE_EXIT | ZombieCombatTests | 0 | clean=True
+RESULT | 40 batch-one integration checks, 0 failures
+SUITE_EXIT | BatchOneTests | 0 | clean=True
+RESULT | 53 checks, 0 failures
+SUITE_EXIT | TestRunner | 0 | clean=True
+RESULT | 33 touch/camera checks, 0 failures
+SUITE_EXIT | TouchInputTests | 0 | clean=True
+RESULT | 34 checks | 0 failures
+SUITE_EXIT | PerformanceTests | 0 | clean=True
+RESULT | 24 quality checks | 0 failures
+SUITE_EXIT | QualityRegressionTests | 0 | clean=True
+RESULT | 29 collision/quality checks | 0 failures
+SUITE_EXIT | CollisionQualityTests | 0 | clean=True
+RESULT | 9 static checks | 0 failures
+SUITE_EXIT | static | 0 | clean=True
+RESULT | 31 building/harvest checks | 0 failures
+SUITE_EXIT | BuildingTests | 0 | clean=True
+RESULT | 26 trading/environment checks | 0 failures
+SUITE_EXIT | TradingEnvironmentTests | 0 | clean=True
+RESULT | 24 family/escort checks | 0 failures
+SUITE_EXIT | FamilyTests | 0 | clean=True
+RESULT | 19 mobile-budget/physics checks | 0 failures
+SUITE_EXIT | MobileBudgetTests | 0 | clean=True
+RESULT | 7 stable-content/migration checks | 0 failures
+SUITE_EXIT | ContentRegressionTests | 0 | clean=True
+RESULT | 449 QA-023-01 save-integrity checks | 0 failures
+SUITE_EXIT | SaveIntegrityTests | 0 | clean=True

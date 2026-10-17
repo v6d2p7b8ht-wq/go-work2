@@ -1,0 +1,30 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Family spawns clear of the existing street-light collider
+PASS | Family cannot be recruited remotely
+PASS | Nearby family interaction starts the real escort
+FOLLOW | (9.31463, -0.004188, 21.15306) target (9.0, 0.05, 23.0)
+PASS | Family physically follows along the street without teleporting
+PASS | Nearby family can be told to wait
+PASS | Waiting family remains in place
+PASS | Loading an escort rebuilds navigation without replaying a stale route
+ARRIVAL | (18.71663, -0.004687, 33.80111) target (20.0, 0.05, 35.0)
+PASS | Family navigates the actual camp entrance and static NPC obstacles
+PASS | Arrival requires a dwell period rather than a single boundary touch
+PASS | Both actors reaching camp completes the task and grants one reward
+PASS | Evacuation reward is not repeatable
+PASS | Completed family task validates through JSON serialization
+PASS | Repeated reload preserves completed task and item counts
+PASS | Claimed rewards cannot be paired with an unfinished task in a save
+PASS | Malformed family position is rejected
+PASS | Player alone reaching camp cannot evacuate family left outside
+PASS | Full inventory leaves a persisted pending reward instead of deleting items
+PASS | Pending reward state survives loading
+PASS | Pending reward can be claimed once after making capacity
+PASS | Escort fixture can build an actual alternative shelter
+PASS | Player-made shelter is not confused with the public evacuation destination
+PASS | Distant family sleeps with low-frequency decisions and no path searches
+FENCE DETOUR | (20.00298, -0.004061, 33.70462)
+PASS | Family detours through the open entrance instead of getting stuck behind the camp fence
+PASS | Legacy save migration initializes the family without inventing quest progress
+RESULT | 24 family/escort checks | 0 failures

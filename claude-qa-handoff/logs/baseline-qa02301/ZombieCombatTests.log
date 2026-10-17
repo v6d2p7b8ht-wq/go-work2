@@ -1,0 +1,24 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Visible survivor triggers chase
+PASS | Close visible survivor triggers attack state
+PASS | Attack has a visible windup before damage
+PASS | Windup resolves one configured damage event
+PASS | Attack cooldown prevents per-frame hits
+PASS | Moving out of reach cancels a pending hit
+PASS | Safe-zone boundary cancels attack even at melee range
+PASS | Supermarket wall blocks melee initiation
+PASS | Occluded player is not tracked through walls
+PASS | Hearing investigates a noise position behind an opaque wall
+PASS | Noise serial prevents repeated consumption
+PASS | Noise event pool stays bounded under repeated footsteps
+PASS | Old noise events expire without retaining phantom targets
+PASS | Losing sight investigates last seen rather than live player position
+PASS | Search timeout starts return to home
+PASS | Reaching home resumes wandering
+PASS | Far infected sleeps without physics movement
+PASS | Saved AI restores position and discards pending attack damage
+CHASE ENDPOINT | player=(-2.02, 0.05, -17.31) infected=(-2.010624, 0.000822, -18.70006) health=76.0
+PASS | Real physics chase reaches melee range despite a quantized navigation endpoint
+PASS | Incapacitated player is not repeatedly attacked
+RESULT | 20 AI checks, 0 failures

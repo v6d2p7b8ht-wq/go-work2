@@ -1,0 +1,29 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Merchant exchange transfers complete costs and rewards
+PASS | Merchant stock accounts for both sides of a trade
+PASS | Ore can purchase real electronic item stacks
+PASS | Fictional equipment blueprint is a saved inventory item
+PASS | Repeated blueprint purchase cannot charge materials
+PASS | Out-of-stock trade is rejected atomically
+PASS | Merchant storage overflow cannot silently destroy the payment
+PASS | Inventory overflow leaves merchant and player unchanged
+PASS | Dynamic stock restocks with bounded saved countdown
+PASS | Trading cannot be invoked remotely
+PASS | Menus pause weather clock and merchant restocking
+PASS | Five infection levels have concrete data definitions
+PASS | Current map resolves distinct camp, outskirts and industrial danger levels
+PASS | Higher infection zone makes gameplay noise propagate farther
+PASS | Actual high-danger player noise can be heard beyond its ordinary radius
+PASS | The same ordinary-zone sound does not gain the industrial noise bonus
+PASS | Night changes actual light energy and enables local illumination
+PASS | Day/night clock crosses midnight without losing the day index
+PASS | Rain weather enables the local particle pool and fog
+PASS | Lowest quality disables rain particles without removing weather state
+PASS | Weather advances deterministically during play
+PASS | Trading and weather state validate after actual JSON serialization
+PASS | Merchant counts and environment time restore exactly
+PASS | Malformed trader rejected before restoring the world
+PASS | Malformed environment rejected before restoring the world
+PASS | Schema 2 migration initializes new modules without changing original items
+RESULT | 26 trading/environment checks | 0 failures

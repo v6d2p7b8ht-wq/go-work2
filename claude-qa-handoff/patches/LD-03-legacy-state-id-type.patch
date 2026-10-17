@@ -1,0 +1,12 @@
+--- a/LastDawn/systems/SaveManager.gd
++++ b/LastDawn/systems/SaveManager.gd
+@@ -171,7 +171,8 @@
+ 		if not (value is int or value is float) or not is_finite(float(value)):
+ 			return false
+ 	# Legacy files have no new fields; defaults pass. If extra fields exist, validate them too.
+-	return data.get("state_id", "state_01") == "state_01" and _valid_batch_one(data)
++	var state_id = data.get("state_id", "state_01")
++	return state_id is String and state_id == "state_01" and _valid_batch_one(data)
+ 
+ func _complete_current(data: Dictionary) -> bool:
+ 	# Presence is distinct from validity. A default value must not hide a truncated file.

@@ -1,0 +1,18 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PROBE | save1 | true
+PROBE | save2 | true
+PROBE | disk wood before | 17.0
+PROBE | modal | welcome
+PROBE | live wood (fresh session) | 0
+PROBE | disk primary wood after 2x background on title | 0.0
+PROBE | disk backup wood after 2x background on title | 0.0
+PROBE | continue loads | true
+PROBE | live wood after continue | 0
+SCRIPT ERROR: Invalid operands 'int' and 'String' in operator '=='.
+          at: valid_snapshot (res://systems/SaveManager.gd:174)
+          GDScript backtrace (most recent call first):
+              [0] valid_snapshot (res://systems/SaveManager.gd:174)
+              [1] run (res://tests/ClaudeProbe.gd:55)
+PROBE | legacy non-string state_id valid? | false
+PROBE | probe done | true

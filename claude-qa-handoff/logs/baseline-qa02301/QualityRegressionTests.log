@@ -1,0 +1,28 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | SAVE-01: older client cannot overwrite a newer-schema primary
+PASS | SAVE-01: newer primary is not silently replaced by an older backup on read
+PASS | SAVE-01: newer backup is protected too
+PASS | SAVE-03: oversized unknown existing file cannot be overwritten
+PASS | SAVE-03: oversized outgoing snapshot cannot create an unreadable save
+PASS | Recovered session can write a valid replacement primary
+PASS | SAVE-02: successful recovery preserves a valid rollback backup
+PASS | Malformed persisted inventory rejected before mutating the world
+PASS | Malformed persisted settings rejected before mutating the world
+PASS | Invalid inventory amount rejected: 0.5
+PASS | Invalid inventory amount rejected: inf
+PASS | Invalid inventory amount rejected: bad
+PASS | Invalid inventory amount rejected: { "nested": 1 }
+PASS | Unknown item IDs are not silently lost while accepting the same schema
+PASS | Invalid persisted FPS rejected: nan
+PASS | Invalid persisted FPS rejected: 77
+PASS | Invalid persisted FPS rejected: 120.5
+PASS | INV-01: saturated item insertion reports failure
+PASS | INV-01: full inventory leaves loot in the world
+PASS | INV-01: saturated multi-item harvest consumes neither resource nor stamina
+PASS | NAV-01: coarse blocked target beside supermarket still finds an approach route
+NAV PHYSICS | initial=6.00749540328979 final=1.06363987922668 state=4 route=1 at=(-7.112847, 0.000826, -13.04589)
+PASS | NAV-01: infected physically advances toward the visible wall-side player
+PASS | UI-01: menu navigation cannot resume an incapacitated player
+PASS | Recovery still returns control normally
+RESULT | 24 quality checks | 0 failures

@@ -1,0 +1,16 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS | Seed: real progress saved to primary and backup
+PASS | Seed: both files hold wood 17
+PASS | Title screen runs a fresh world over an existing save
+PASS | LD-01: two app/page backgrounds on the title keep the primary save
+PASS | LD-01: two app/page backgrounds on the title keep the backup save
+PASS | LD-01: an autosave tick on the title writes nothing
+PASS | Continue restores the real progress after backgrounding on the title
+PASS | After continuing, background saves resume and rotate normally
+PASS | Leaving the title through another menu does not block later saves
+PASS | No continue button without a save
+PASS | New player enters the world
+PASS | New player's first background save is written
+PASS | LD-03: legacy file with numeric state_id is rejected
+RESULT | 13 session-guard checks | 0 failures

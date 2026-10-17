@@ -1,0 +1,70 @@
+--- a/LastDawn/scripts/WorldManager.gd
++++ b/LastDawn/scripts/WorldManager.gd
+@@ -32,6 +32,9 @@
+ var autosave_clock := 45.0
+ var telemetry_clock := 1.0
+ var ready_for_saves := false
++# The title screen runs a fresh default world. Until the player continues or starts,
++# background/autosave must not rotate the real save into the backup and overwrite it.
++var awaiting_session_choice := false
+ var web_visibility_callback: JavaScriptObject
+ 
+ func _ready() -> void:
+@@ -116,7 +119,14 @@
+ 		web_visibility_callback = JavaScriptBridge.create_callback(_web_visibility_changed)
+ 		JavaScriptBridge.get_interface("document").addEventListener("visibilitychange", web_visibility_callback)
+ 	if DisplayServer.get_name() != "headless" and "--test" not in OS.get_cmdline_user_args():
+-		hud.call_deferred("show_welcome")
++		open_title()
++
++func open_title() -> void:
++	awaiting_session_choice = true
++	hud.call_deferred("show_welcome")
++
++func can_autosave() -> bool:
++	return ready_for_saves and not awaiting_session_choice
+ 
+ func _build_npc() -> void:
+ 	var npc := CharacterVisual.new()
+@@ -173,7 +183,7 @@
+ 	if proximity_clock <= 0:
+ 		proximity_clock = 0.16
+ 		_update_proximity()
+-	if autosave_clock <= 0 and ready_for_saves:
++	if autosave_clock <= 0 and can_autosave():
+ 		autosave_clock = 45
+ 		SaveManager.save_world(self)
+ 	if telemetry_clock <= 0:
+@@ -325,6 +335,7 @@
+ 	trader.restore(data["phase2"]["trader"])
+ 	clock.restore(data["phase2"]["environment"])
+ 	family.restore(data["phase2"]["family"])
++	awaiting_session_choice = false
+ 	noises.clear()
+ 	for zombie in zombies:
+ 		var saved_ai := {}
+@@ -347,12 +358,12 @@
+ 			mesh.visibility_range_end = float(GraphicsManager.preset()["distance"])
+ 
+ func _web_visibility_changed(_args: Array) -> void:
+-	if JavaScriptBridge.get_interface("document").hidden and ready_for_saves:
++	if JavaScriptBridge.get_interface("document").hidden and can_autosave():
+ 		SaveManager.save_world(self)
+ 		hud.controls.reset_touches()
+ 
+ func _notification(what: int) -> void:
+-	if what == NOTIFICATION_APPLICATION_PAUSED and ready_for_saves:
++	if what == NOTIFICATION_APPLICATION_PAUSED and can_autosave():
+ 		SaveManager.save_world(self)
+ 		if is_instance_valid(hud):
+ 			hud.controls.reset_touches()
+--- a/LastDawn/ui/SurvivalHUD.gd
++++ b/LastDawn/ui/SurvivalHUD.gd
+@@ -325,6 +325,7 @@
+ 	close_button = null
+ 	status_note = null
+ 	current_modal = ""
++	world.awaiting_session_choice = false
+ 	shade.visible = false
+ 	controls.set_enabled(true)
+ 	get_tree().paused = false

@@ -1,0 +1,28 @@
+{
+  "import": {
+    "exit_code": 0,
+    "seconds": 6.945,
+    "log": "import.log",
+    "errors": [],
+    "results": []
+  },
+  "SessionGuardTests": {
+    "exit_code": 1,
+    "seconds": 0.918,
+    "log": "SessionGuardTests.log",
+    "errors": [
+      "FAIL | LD-01: two app/page backgrounds on the title keep the primary save",
+      "FAIL | LD-01: two app/page backgrounds on the title keep the backup save",
+      "FAIL | LD-01: an autosave tick on the title writes nothing",
+      "FAIL | Continue restores the real progress after backgrounding on the title",
+      "FAIL | After continuing, background saves resume and rotate normally",
+      "SCRIPT ERROR: Invalid operands 'int' and 'String' in operator '=='."
+    ],
+    "results": [
+      {
+        "checks": 13,
+        "failures": 5
+      }
+    ]
+  }
+}

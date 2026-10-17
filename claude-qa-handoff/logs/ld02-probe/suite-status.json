@@ -1,0 +1,14 @@
+{
+  "SessionGuardTests": {
+    "exit_code": 0,
+    "seconds": 0.767,
+    "log": "SessionGuardTests.log",
+    "errors": [],
+    "results": [
+      {
+        "checks": 3,
+        "failures": 0
+      }
+    ]
+  }
+}

@@ -1,8 +1,0 @@
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-PASS | Seed: real progress saved to primary and backup
-PASS | Seed: both files hold wood 17
-PASS | probe: tapped enter with an existing save
-PROBE | after 1st autosave primary=0.0 backup=17.0
-PROBE | after 2nd autosave primary=0.0 backup=0.0
-RESULT | 3 session-guard checks | 0 failures
